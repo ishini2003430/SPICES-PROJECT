@@ -1,0 +1,128 @@
+/* General Page Container */
+div {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Page Title */
+h1 {
+    text-align: center;
+    color: #E65100; /* Spicy Orange */
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Buttons Styling */
+.btn {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Add New Income Button */
+.add-btn {
+    background-color: #FF5722; /* Orange Red */
+    color: white;
+}
+
+.add-btn:hover {
+    background-color: #D84315; /* Darker Orange Red */
+}
+
+/* Download PDF Button */
+.download-btn {
+    background-color: #FF9800; /* Vibrant Orange */
+    color: white;
+}
+
+.download-btn:hover {
+    background-color: #FB8C00; /* Slightly darker orange */
+}
+
+/* Update Button */
+.update-btn {
+    background-color: #FFB74D; /* Light Orange */
+    color: white;
+}
+
+.update-btn:hover {
+    background-color: #FFA726; /* Darker orange */
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: #FF3D00; /* Red-Orange */
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #D32F2F; /* Darker Red-Orange */
+}
+
+/* Search Bar Styling */
+.search-bar {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #FF9800; /* Border matching the vibrant orange */
+    outline: none;
+    font-size: 14px;
+    color: #4E342E; /* Deep Brown */
+    margin-left: 10px;
+}
+
+.search-bar:focus {
+    border-color: #FF5722; /* Focused border color matching spicy orange */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFF3E0; /* Light Creamy Background */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Head */
+thead {
+    background-color: #FFECB3; /* Light Yellow-Orange */
+}
+
+th {
+    padding: 12px;
+    text-align: left;
+    color: #6D4C41; /* Medium Brown */
+    font-size: 16px;
+}
+
+/* Table Rows */
+tbody tr {
+    background-color: #FFFAF0; /* Soft Peach */
+    transition: background-color 0.3s ease;
+}
+
+/* Alternate Row Color */
+tbody tr:nth-child(even) {
+    background-color: #FFE0B2; /* Soft light orange */
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background-color: #FFCC80; /* Peachy Light Orange */
+}
+
+/* Table Data Cells */
+td {
+    padding: 10px;
+    color: #6D4C41; /* Medium Brown */
+}
+
+/* Actions Column */
+td:last-child {
+    text-align: center;
+}

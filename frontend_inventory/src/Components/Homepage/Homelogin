@@ -1,0 +1,320 @@
+// src/components/HomePage.js
+import React from 'react';
+
+function HomePage() {
+  // --- Styles from HomePage.css (as inline styles) ---
+  const homePageStyle = {
+    fontFamily: 'sans-serif',
+    backgroundColor: '#f8f4e9',
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  };
+
+  const headerStyle = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '20px 40px',
+    width: '100%',
+    boxSizing: 'border-box',
+  };
+
+  const logoStyle = {
+    fontSize: '24px',
+    fontWeight: 'bold',
+    color: '#d97706',
+  };
+
+  const spiceTextStyle = {
+    color: '#d97706',
+  };
+
+  const managerTextStyle = {
+    color: '#27272a',
+  };
+
+  const loginButtonsStyle = {
+    display: 'flex',
+  };
+
+  const loginButtonStyle = {
+    backgroundColor: '#fff',
+    color: '#d97706',
+    border: '1px solid #d97706',
+    padding: '8px 16px',
+    borderRadius: '5px',
+    cursor: 'pointer',
+    fontSize: '14px',
+    marginLeft: '10px',
+    display: 'flex',
+    alignItems: 'center',
+  };
+
+  const iconStyle = {
+    width: '18px',
+    height: '18px',
+    marginRight: '5px',
+  };
+
+  const heroSectionStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '60px 20px',
+    width: '100%',
+  };
+
+  const heroCardStyle = {
+    backgroundColor: '#fff',
+    borderRadius: '10px',
+    padding: '40px',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+    textAlign: 'center',
+    maxWidth: '600px',
+    width: '90%',
+  };
+
+  const cubeIconStyle = {
+    backgroundColor: '#fde68a',
+    color: '#d97706',
+    borderRadius: '50%',
+    width: '80px',
+    height: '80px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: '0 auto 20px',
+  };
+
+  const heroTitleStyle = {
+    fontSize: '48px',
+    fontWeight: 'bold',
+    color: '#27272a',
+    marginBottom: '15px',
+  };
+
+  const heroSubtitleStyle = {
+    color: '#52525b',
+    fontSize: '18px',
+    lineHeight: '1.6',
+    marginBottom: '30px',
+  };
+
+  const heroButtonsStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+  };
+
+  const primaryButtonStyle = {
+    backgroundColor: '#d97706',
+    color: '#fff',
+    padding: '12px 24px',
+    borderRadius: '8px',
+    fontSize: '16px',
+    cursor: 'pointer',
+    border: 'none',
+    display: 'flex',
+    alignItems: 'center',
+    marginRight: '15px',
+  };
+
+  const secondaryButtonStyle = {
+    backgroundColor: '#fff',
+    color: '#d97706',
+    border: '1px solid #d97706',
+    padding: '12px 24px',
+    borderRadius: '8px',
+    fontSize: '16px',
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+  };
+
+  const whyChooseSectionStyle = {
+    padding: '80px 20px',
+    textAlign: 'center',
+    maxWidth: '1200px',
+    width: '90%',
+    margin: '60px auto',
+  };
+
+  const whyChooseTitleStyle = {
+    fontSize: '32px',
+    color: '#27272a',
+    marginBottom: '40px',
+  };
+
+  const featuresGridStyle = {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+    gap: '30px',
+    marginTop: '20px',
+  };
+
+  const featureCardStyle = {
+    backgroundColor: '#fff',
+    borderRadius: '8px',
+    padding: '30px',
+    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.08)',
+    textAlign: 'center',
+  };
+
+  const featureIconStyle = {
+    backgroundColor: '#fde68a',
+    color: '#d97706',
+    borderRadius: '50%',
+    width: '70px',
+    height: '70px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: '0 auto 20px',
+  };
+
+  const featureIconSvgStyle = {
+    width: '30px',
+    height: '30px',
+  };
+
+  const featureCardTitleStyle = {
+    fontSize: '20px',
+    color: '#27272a',
+    marginBottom: '10px',
+  };
+
+  const featureCardTextStyle = {
+    color: '#52525b',
+    fontSize: '16px',
+    lineHeight: '1.5',
+  };
+
+  const footerStyle = {
+    backgroundColor: '#a35709',
+    color: '#fff',
+    padding: '30px 40px',
+    textAlign: 'center',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
+    boxSizing: 'border-box',
+  };
+
+  const footerLogoStyle = {
+    fontSize: '20px',
+    fontWeight: 'bold',
+  };
+
+  const footerSpiceTextStyle = {
+    color: '#fff',
+  };
+
+  const footerManagerTextStyle = {
+    color: '#f8f4e9',
+  };
+
+  const footerTextStyle = {
+    fontSize: '14px',
+    margin: '0',
+  };
+
+  return (
+    <div className="home-page" style={homePageStyle}>
+      <header className="header" style={headerStyle}>
+        <div className="logo" style={logoStyle}>
+          <span className="spice-text" style={spiceTextStyle}>Spice</span><span className="manager-text" style={managerTextStyle}>Manager</span>
+        </div>
+        <div className="login-buttons" style={loginButtonsStyle}>
+          <button className="user-login-btn" style={loginButtonStyle}>
+            <svg viewBox="0 0 24 24" fill="currentColor" className="icon" style={iconStyle}>
+              <path d="M12 4a4 4 0 100 8 4 4 0 000-8zm0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4z" />
+            </svg>
+            User Login
+          </button>
+          <button className="admin-login-btn" style={loginButtonStyle}>
+            <svg viewBox="0 0 24 24" fill="currentColor" className="icon" style={iconStyle}>
+              <path d="M12 2a5 5 0 00-5 5v11a5 5 0 0010 0V7a5 5 0 00-5-5zm0 12.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
+            </svg>
+            Admin Login
+          </button>
+        </div>
+      </header>
+
+      <main className="hero-section" style={heroSectionStyle}>
+        <div className="hero-card" style={heroCardStyle}>
+          <div className="cube-icon" style={cubeIconStyle}>
+            <svg viewBox="0 0 24 24" fill="currentColor" className="icon" style={iconStyle}>
+              <path d="M12 3c-1.1 0-2 .9-2 2v2h4V5c0-1.1-.9-2-2-2zm0 14c-1.1 0-2 .9-2 2v2h4v-2c0-1.1-.9-2-2-2zm-7-3c1.1 0 2-.9 2-2V7H3v8c0 1.1.9 2 2 2zm12 0c1.1 0 2-.9 2-2V7h-4v8c0 1.1.9 2 2 2zM5 5c-1.1 0-2 .9-2 2v2h4V7c0-1.1-.9-2-2-2zm14 0c-1.1 0-2 .9-2 2v2h4V7c0-1.1-.9-2-2-2zm-7 8c-1.1 0-2 .9-2 2v2h4v-2c0-1.1-.9-2-2-2z" />
+            </svg>
+          </div>
+          <h1 className="hero-title" style={heroTitleStyle}>
+            <span className="spice-text" style={spiceTextStyle}>Spice</span><span className="manager-text" style={managerTextStyle}>Manager</span>
+          </h1>
+          <p className="hero-subtitle" style={heroSubtitleStyle}>
+            The complete management system for your spice business. Track inventory, manage suppliers, handle orders, and more.
+          </p>
+          <div className="hero-buttons" style={heroButtonsStyle}>
+            <button className="user-login-btn primary" style={{ ...loginButtonStyle, ...primaryButtonStyle, marginRight: '15px' }}>
+              <svg viewBox="0 0 24 24" fill="currentColor" className="icon" style={iconStyle}>
+                <path d="M12 4a4 4 0 100 8 4 4 0 000-8zm0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4z" />
+              </svg>
+              User Login
+            </button>
+            <button className="admin-login-btn secondary" style={{ ...loginButtonStyle, ...secondaryButtonStyle }}>
+              <svg viewBox="0 0 24 24" fill="currentColor" className="icon" style={iconStyle}>
+                <path d="M12 2a5 5 0 00-5 5v11a5 5 0 0010 0V7a5 5 0 00-5-5zm0 12.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
+              </svg>
+              Admin Login
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <section className="why-choose-section" style={whyChooseSectionStyle}>
+        <h2 style={whyChooseTitleStyle}>Why Choose SpiceManager?</h2>
+        <div className="features-grid" style={featuresGridStyle}>
+          <div className="feature-card" style={featureCardStyle}>
+            <div className="feature-icon" style={featureIconStyle}>
+              <svg viewBox="0 0 24 24" fill="currentColor" className="icon" style={featureIconSvgStyle}>
+                <path d="M12 3c-1.1 0-2 .9-2 2v2h4V5c0-1.1-.9-2-2-2zm0 14c-1.1 0-2 .9-2 2v2h4v-2c0-1.1-.9-2-2-2zm-7-3c1.1 0 2-.9 2-2V7H3v8c0 1.1.9 2 2 2zm12 0c1.1 0 2-.9 2-2V7h-4v8c0 1.1.9 2 2 2zM5 5c-1.1 0-2 .9-2 2v2h4V7c0-1.1-.9-2-2-2zm14 0c-1.1 0-2 .9-2 2v2h4V7c0-1.1-.9-2-2-2zm-7 8c-1.1 0-2 .9-2 2v2h4v-2c0-1.1-.9-2-2-2z" />
+              </svg>
+            </div>
+            <h3 style={featureCardTitleStyle}>Inventory Management</h3>
+            <p style={featureCardTextStyle}>Track all your spices in real time with automated stock alerts.</p>
+          </div>
+
+          <div className="feature-card" style={featureCardStyle}>
+            <div className="feature-icon" style={featureIconStyle}>
+              <svg viewBox="0 0 24 24" fill="currentColor" className="icon" style={featureIconSvgStyle}>
+                <path d="M12 1L3 5v6c0 5.55 8.4 10.85 9 11.35.6-5.5 9-10.8 9-11.35V5l-9-4zm0 10.7c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" />
+              </svg>
+            </div>
+            <h3 style={featureCardTitleStyle}>Admin Dashboard</h3>
+            <p style={featureCardTextStyle}>Powerful analytics and management tools for business owners.</p>
+          </div>
+
+          <div className="feature-card" style={featureCardStyle}>
+            <div className="feature-icon" style={featureIconStyle}>
+              <svg viewBox="0 0 24 24" fill="currentColor" className="icon" style={featureIconSvgStyle}>
+                <path d="M12 4a4 4 0 100 8 4 4 0 000-8zm0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4z" />
+              </svg>
+            </div>
+            <h3 style={featureCardTitleStyle}>User-Friendly</h3>
+            <p style={featureCardTextStyle}>Intuitive interface designed for staff of all technical abilities.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer className="footer" style={footerStyle}>
+        <div className="footer-logo" style={footerLogoStyle}>
+          <span className="spice-text" style={footerSpiceTextStyle}>Spice</span><span className="manager-text" style={footerManagerTextStyle}>Manager</span>
+        </div>
+        <p style={footerTextStyle}>© 2025 SpiceManager. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
+
+export default HomePage;

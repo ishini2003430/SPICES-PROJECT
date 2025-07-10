@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf3e7; /* Light beige background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .title {
+    text-align: center;
+    color: #D45D26;
+    margin-top: 5%;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  /* Table Container */
+  .table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: -5%;
+  }
+  
+  /* Stock Table */
+  .stock-table {
+    width: 90%;
+    max-width: 1100px;
+    border-collapse: collapse;
+    background: #FFF8E1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Table Header */
+  .stock-table th {
+    background-color: #bfaa54;
+    color: #333;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  /* Table Cells */
+  .stock-table td {
+    padding: 12px;
+    border: 1px solid #D45D26;
+    font-size: 16px;
+  }
+  
+  /* Zebra Striping for Rows */
+  .stock-table tr:nth-child(even) {
+    background-color: #FFE5B4;
+  }
+  
+  /* Hover Effect */
+  .stock-table tr:hover {
+    background-color: #FFD580;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* No Data Message */
+  .no-data {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Action Buttons */
+  .update-btn,
+  .delete-btn {
+    padding: 8px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Update Button */
+  .update-btn {
+    background-color: #13b855;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .update-btn:hover {
+    background-color: #0c7a38;
+    transform: scale(1.05);
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    background-color: #8d0d0d;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .delete-btn:hover {
+    background-color: #8d0d0d;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 1024px) {
+    .stock-table {
+      width: flex;
+    }
+  
+    .table-container {
+      padding: 10px;
+    }
+  
+    .update-btn,
+    .delete-btn {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+    /* Style for the CSV Report Button */
+  .report-btn1 {
+    background-color: #2051ab; /* Blue color */
+    color: rgb(20, 6, 6);
+    font-size: 16px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 10px; /* Space between buttons */
+  }
+  
+  /* Hover effect for CSV button */
+  .report-btn1:hover {
+    background-color: #4a7dc6; /* Darker blue color */
+    transform: scale(1.05); /* Slight scaling effect */
+  }
+  
+  /* Focus effect for CSV button */
+  .report-btn1:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(112, 109, 204, 0.6); /* Focus shadow */
+  }
+  
+  /* Disabled state for CSV button */
+  .report-btn1:disabled {
+    background-color: #bdc3c7; /* Grey color */
+    cursor: not-allowed;
+  }
+  
+  
+  /* Style for the PDF Report Button */
+  .report-btn {
+    background-color: #4875ac; /* Greenish color */
+    color: rgb(18, 18, 14);
+    font-size: 16px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 10px; /* Space between buttons */
+  }
+  
+  /* Hover effect for PDF button */
+  .report-btn:hover {
+    background-color: #288abf; /* Darker greenish color */
+    transform: scale(1.05); /* Slight scaling effect */
+  }
+  
+  /* Focus effect for PDF button */
+  .report-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(26, 188, 156, 0.6); /* Focus shadow */
+  }
+  
+  /* Disabled state for PDF button */
+  .report-btn:disabled {
+    background-color: #bdc3c7; /* Grey color */
+    cursor: not-allowed;
+  }
+  /* Style for the 'Go to Alerts' button */
+.alert-btn {
+  background-color: #c8392f; /* Blue background */
+  color: white; /* White text */
+  padding: 12px 62px; /* Padding for size */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+  margin-left: 58%;
+}
+
+/* Style for the button when hovered */
+.alert-btn:hover {
+  background-color: #e96060; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Style for the button when focused (keyboard navigation) */
+.alert-btn:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.6); /* Custom focus outline */
+}
+
+
+
+
+  
+  }
+  

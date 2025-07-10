@@ -1,0 +1,70 @@
+/* src/Components/Sidebar.css */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #6B4226; /* Deep Brown */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 10%;
+}
+
+.sidebar-logo img {
+    width: 120px;  /* Adjust size */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%; /* Makes it circular */
+    border: 3px solid #E09F3E; /* Warm Yellow border */
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E09F3E; /* Warm Yellow */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar ul li:hover {
+    background-color: #D76A03; /* Burnt Orange */
+}
+
+.sidebar ul li a:hover {
+    padding-left: 10px;
+}
+
+/* Extra Styling for Sidebar Buttons */
+.sidebar ul li a {
+    padding: 10px;
+    background-color: #556B2F; /* Olive Green */
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    background-color: #E09F3E; /* Warm Yellow */
+    color: #6B4226; /* Deep Brown */
+    padding-left: 15px;
+}
