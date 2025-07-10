@@ -1,0 +1,105 @@
+/* Spice-inspired dashboard theme */
+.logout-btn {
+  
+    top: 24px;
+    right: 32px;
+    background: linear-gradient(90deg, #ff9800 30%, #800000 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(128,0,0,0.12);
+    transition: background 0.2s, box-shadow 0.2s;
+    z-index: 10;
+  }
+  .logout-btn:hover {
+    background: linear-gradient(90deg, #ffb347 30%, #a0522d 100%);
+  }
+  
+  .dashboard-container {
+    background: linear-gradient(120deg, #ffb347 0%, #ffcc80 100%);
+    min-height: 100vh;
+    padding: 30px 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .summary-cards {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 32px;
+    margin-top: 0px;
+  }
+  .summary-card {
+    background: #fff7e6;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.12);
+    padding: 24px 36px;
+    color: #7b3f00;
+    min-width: 180px;
+    text-align: center;
+    border: 2px solid #ffb347;
+    font-size: 1.2rem;
+  }
+  .summary-card.income { border-color: #ff9800; color: #ff9800; }
+  .summary-card.expense { border-color: #8d5524; color: #8d5524; }
+  .summary-card.balance { border-color: #800000; color: #800000; }
+  .charts-row {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+  .chart-container {
+    background: #fff3cd;
+    border-radius: 16px;
+    padding: 18px 24px;
+    flex: 1;
+    box-shadow: 0 2px 8px rgba(255, 152, 0, 0.09);
+    min-width: 320px;
+  }
+  .suggestion-chat {
+    background: #fffbe7;
+    border-left: 8px solid #ffb347;
+    border-radius: 12px;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 18px 26px;
+    color: #a0522d;
+    font-size: 1.08rem;
+    margin-bottom: 24px;
+  }
+  .recent-transactions {
+    background: #fff7e6;
+    border-radius: 14px;
+    padding: 18px 24px;
+    margin: 0 auto;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(139, 69, 19, 0.07);
+  }
+  .recent-transactions h3 {
+    color: #ff9800;
+    margin-bottom: 12px;
+  }
+  .quick-actions {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 22px;
+  }
+  .quick-action-btn {
+    background: linear-gradient(90deg, #ffb347 40%, #8d5524 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .quick-action-btn:hover {
+    background: linear-gradient(90deg, #ff9800 40%, #800000 100%);
+  }
+  

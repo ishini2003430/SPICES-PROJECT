@@ -1,0 +1,222 @@
+/* Page Container */
+.salary-dashboard-container {
+    background: #fff;
+    min-height: 100vh;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.salary-summary-cards {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 32px;
+    margin-top: 0px;
+}
+
+.salary-summary-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(139,69,19,0.09);
+    padding: 14px 18px;
+    color: #7b3f00;
+    min-width: 120px;
+    max-width: 180px;
+    text-align: center;
+    border: 2px solid #ffb347;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+.salary-summary-card.salary { border-color: #ff9800; color: #ff9800; }
+.salary-summary-card.allowance { border-color: #8d5524; color: #8d5524; }
+.salary-summary-card.net { border-color: #800000; color: #800000; }
+
+
+/* Page Title */
+h1 {
+    text-align: center;
+    color: #8B0000;
+    font-size: 2.2rem;
+    margin-bottom: 28px;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+}
+
+/* Buttons Styling */
+button, .btn {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+}
+
+/* Icon Buttons */
+.btn.view-btn, .btn.download-btn {
+    background: #fff;
+    color: #1976d2;
+    border: 2px solid #FFA500;
+    box-shadow: 0 2px 8px rgba(255, 165, 0, 0.10);
+    margin-right: 6px;
+}
+.btn.download-btn { border: 2px solid #1976d2; color: #1976d2; }
+.btn.view-btn:hover {
+    background: #FFF3E0;
+    border-color: #FF9800;
+}
+.btn.download-btn:hover {
+    background: #e3e8ee;
+    border-color: #1976d2;
+}
+.btn.view-btn span, .btn.download-btn span {
+    font-size: 14px;
+    width: 22px;
+    height: 22px;
+    min-width: 18px;
+    min-height: 18px;
+    line-height: 1;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Add New Expense Button */
+button:first-child {
+    background-color: #FFA500; /* Orange */
+    color: white;
+}
+
+button:first-child:hover {
+    background-color: #FF7F00; /* Darker Orange */
+}
+
+/* Download PDF Button */
+button:nth-child(2) {
+    background-color: #FF6347; /* Tomato Orange */
+    color: white;
+}
+
+button:nth-child(2):hover {
+    background-color: #FF4500; /* Darker Tomato */
+}
+
+/* Update Button */
+.update-btn {
+  background-color: #388e3c !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 6px 14px !important;
+  margin-right: 8px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #800000 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 6px 14px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+    background-color: #FF3300; /* Darker Red-Orange */
+}
+
+/* Search Bar Container */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+/* Search Bar Input */
+.search-container input {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+/* Search Bar Input Focus */
+.search-container input:focus {
+    border-color: #FF8C00; /* Orange border on focus */
+    outline: none;
+}
+
+/* Search Bar Placeholder */
+.search-container input::placeholder {
+    color: #aaa;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FAF3E0; /* Very Light Beige */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Head */
+thead {
+    background-color: #F0E6D2; /* Slightly darker beige */
+}
+
+th {
+    padding: 12px;
+    text-align: left;
+    color: #5A3E2B; /* Dark Brown */
+    font-size: 16px;
+}
+
+/* Table Rows */
+tbody tr {
+    background-color: #FFF8E7; /* Very Light Beige */
+    transition: background-color 0.3s ease;
+}
+
+/* Alternate Row Color */
+tbody tr:nth-child(even) {
+    background-color: #F5E6CC; /* Light Tan */
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background-color: #FDEEDC; /* Very soft peach */
+}
+
+/* Table Data Cells */
+td {
+    padding: 10px;
+    color: #5A3E2B; /* Dark Brown */
+}
+
+/* Actions Column */
+td:last-child {
+    text-align: center;
+}
+
+/* Compact action buttons in salary actions column */
+.salary-table td:last-child .btn {
+    min-width: 28px;
+    min-height: 28px;
+    width: 28px;
+    height: 28px;
+    padding: 2px 4px;
+    margin: 0 1.5px;
+    font-size: 13px;
+    box-shadow: none;
+}

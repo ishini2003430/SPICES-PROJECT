@@ -1,0 +1,54 @@
+/* Updated navbar with a spices theme */
+
+.navbar-container {
+    display: flex;
+    width:1450px;
+    height:140px;
+    align-items: center;
+    background-color: rgb(223, 145, 63); /* Deep maroon background */
+    padding: 8px 16px;
+    color: #4E342E;
+    justify-content: space-between; /* Align logo to the left and push links to the right */
+    border-bottom: 5px solid #4E342E;
+    margin-top: -200px;
+  }
+  
+  .navbar-logo {
+    height: 48px;
+    width: auto;
+    margin-right: 0; /* Remove margin to align logo to the left */
+    border-radius: 8px;
+    background: #fff8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .home-ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0 0 0 auto; /* Push links to the right */
+    padding: 0;
+    gap: 20px;
+    background: none;
+    border: none;
+  }
+  
+  .home-11 {
+    display: inline;
+    padding: 10px 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #4E342E; /* Soft beige text color for contrast */
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .nav-link:hover {
+    color: maroon; /* Bright orange for spice effect */
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  

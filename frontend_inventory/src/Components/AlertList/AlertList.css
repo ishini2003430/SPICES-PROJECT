@@ -1,0 +1,68 @@
+/* General styling for the alert list container */
+.alert-list-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #e1e990;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading style */
+  .alert-list-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the list of alerts */
+  .alert-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .alert-list li {
+    background-color: #ddeb96;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style for unread alerts */
+  .alert-list li.unread {
+    background-color: #fffbf0;
+    border-left: 5px solid #d59109;
+  }
+  
+  /* Style for read alerts */
+  .alert-list li.read {
+    background-color: #e5e5e5;
+    border-left: 5px solid #2e7d32; /* Green for read alerts */
+  }
+  
+  /* Mark as Read button style */
+  .alert-list button {
+    padding: 8px 16px;
+    background-color: #d59109; /* Red background for Mark as Read */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .alert-list button:hover {
+    background-color: #dc8717; /* Darker red on hover */
+  }
+  
+  .alert-list button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(176, 99, 16, 0.6); /* Custom focus outline */
+  }
+  
